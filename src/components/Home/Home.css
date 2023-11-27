@@ -1,11 +1,11 @@
 .home-container {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
     background-color: #ECFDF5;
-    margin-top: 100px;
+
 }
 
 .small-images {
