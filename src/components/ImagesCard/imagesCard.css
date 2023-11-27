@@ -1,0 +1,16 @@
+.image-item {
+    background-color: #DCFCE7;
+    border-radius: 15px;
+    display:flex;
+    flex-direction: column;
+    height: 350px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 300px;
+    width: 350px;
+    border-radius: 15px;
+}

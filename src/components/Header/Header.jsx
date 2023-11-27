@@ -1,29 +1,28 @@
-import React from 'react'
-import { AppBar, Toolbar, Button, Avatar, Typography } from '@mui/material'
+
+import { Toolbar, Button, Avatar, Typography } from '@mui/material'
 
 function Header() {
   return (
-    <AppBar
-      style={{ top: 0, left: 0, width: '100%', backgroundColor: '#65a30d' }}
-    >
+    <>
       <Toolbar
         style={{
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          padding: '0 16px',
           backgroundColor: '#ECFDF5',
+  
+          
         }}
       >
         <Avatar
           alt="Logo"
           src="/logo_recortado.webp"
           className="logo"
-          style={{ width: '60px', height: '60px', fontSize: '32px' }}
+          style={{ width: '80px', height: '80px', fontSize: '40px' }}
         />
 
         <Typography
-          variant="h6"
+          variant="h3"
           style={{
             color: '#65a30d',
             fontWeight: 'bold',
@@ -33,7 +32,6 @@ function Header() {
           SKYSCAPE
         </Typography>
 
-  
         <div
           style={{
             display: 'flex',
@@ -53,24 +51,26 @@ function Header() {
                 transform: 'scale(1.05)', // Aumenta un poco el tamaño
               },
             }}
+            style={{ fontSize: '16px' }}
           >
             Registrarse
           </Button>
           <Button
             variant="contained"
             sx={{
-              backgroundColor: '#65a30d',
+              backgroundColor: '#059669',
               '&:hover': {
                 backgroundColor: '#4caf50', // Cambia el color al pasar el cursor
                 transform: 'scale(1.05)', // Aumenta un poco el tamaño
               },
             }}
+            style={{ fontSize: '16px' }}
           >
             Entrar
           </Button>
         </div>
       </Toolbar>
-    </AppBar>
+    </>
   )
 }
 
