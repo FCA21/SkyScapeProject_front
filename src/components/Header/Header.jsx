@@ -9,9 +9,7 @@ function Header() {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          backgroundColor: '#ECFDF5',
-  
-          
+          backgroundColor: '#064E3B',
         }}
       >
         <Avatar
