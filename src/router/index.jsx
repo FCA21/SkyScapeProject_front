@@ -13,7 +13,7 @@ const router = createBrowserRouter([
             },
         ],
     },
-    {
+   /*  {
         path:"/",
         element:<Root2/>,
         children: [
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
                 element: <Home/>,
             }
         ]
-    }
+    } */
 ]);
 
 export default router
