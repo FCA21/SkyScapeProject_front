@@ -4,7 +4,7 @@ import './imagesCard.css'
 const ImagesCard = ({ima, txt}) => {
   return (
       <div className="image-item">
-        <img src= {ima} alt={`imagen ${txt}`} />
+        <img src={ima} alt={`imagen ${txt}`} />
         <p>{txt}</p>
       </div>
   )

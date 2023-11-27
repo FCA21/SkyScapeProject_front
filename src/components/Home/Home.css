@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .home-container {
     height: 100%;
     display: flex;
@@ -20,21 +23,15 @@
 
 }
 
-
 .explore-text {
-    margin-top: 45px;
+    font-family: 'Pacifico', cursive;
+    margin-top: 30px;
     margin-bottom: 20px;
+    color: #064E3B
 }
 
-
-
- /* maxWidth="lg"
-        className="container"
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          width: '100vw',
-          backgroundColor: '#DCFCE7',
-          marginTop: '100px',
-        }} */
+.subtitle {
+    font-family: 'Roboto', sans-serif;
+    color: #064E3B;
+    font-size: 14px;
+}
