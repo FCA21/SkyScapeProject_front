@@ -2,6 +2,8 @@ import './Home.css'
 import ImagesCard from '../ImagesCard/ImagesCard'
 import HomeImage from '../HomeImage/HomeImage'
 import HowWork from '../HowWork/HowWork'
+import Benefits from '../Benefits/Benefits'
+
 
 function Home() {
   return (
@@ -19,7 +21,10 @@ function Home() {
           <ImagesCard ima="/buceo.png" txt="Budeo" />
           <ImagesCard ima="/observacion.png" txt="Observacion" />
         </div>
-        <div><HowWork/></div>
+        <div><HowWork/>
+        </div>
+        <div><Benefits/>
+        </div>
       </div>
     
   

@@ -24,14 +24,15 @@
 }
 
 .explore-text {
-    font-family: 'Pacifico', cursive;
+      font-family: "Work Sans-Regular", Helvetica;
     margin-top: 30px;
     margin-bottom: 20px;
     color: #064E3B
 }
 
 .subtitle {
-    font-family: 'Roboto', sans-serif;
-    color: #064E3B;
-    font-size: 14px;
+    font-family: "Work Sans-Regular", Helvetica;
+    color: #064e3b;
+    font-size: 20px;
+    margin-bottom: 30px;
 }

@@ -1,0 +1,17 @@
+.header_signup {
+  height: 80px;
+  position: relative;
+  width: 100%;
+  background-color: #ECFDF5;
+  color: #fff;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin: auto;
+  
+}
+
+.logo {
+  height: 75px;
+  width: 100px;
+}

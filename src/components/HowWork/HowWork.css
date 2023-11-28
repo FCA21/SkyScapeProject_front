@@ -1,14 +1,15 @@
 .container {
-  margin-top: 35px;
+  margin-top: 40px;
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: center;
   position: relative;
+  margin-bottom: 100px;
 }
 
-.container .modern-inter-heading {
+.container .heading {
   align-self: stretch;
   color: #064e3b;
   font-family: "Inter-Bold", Helvetica;
@@ -20,7 +21,7 @@
   position: relative;
 }
 
-.container .copy-component {
+.container .component {
   align-items: center;
   align-self: stretch;
   border-bottom-style: solid;
@@ -58,7 +59,7 @@
   position: relative;
 }
 
-.container .modern-inter-text {
+.container .inter-text {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   align-self: stretch;

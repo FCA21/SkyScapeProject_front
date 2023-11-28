@@ -1,10 +1,37 @@
-import './Footer.css'
+import { Link } from 'react-router-dom'
+import { Typography, Grid } from '@mui/material'
 
 function Footer() {
   return (
-    <div className="footer">
-      <h1>Footer</h1>
-    </div>
+    <footer
+      style={{
+        backgroundColor: '#064E3B',
+        color: '#ffffff',
+        padding: '20px',
+        textAlign: 'center',
+      }}
+    >
+      <Grid container direction="column" alignItems="center" spacing={2}>
+        <Grid item>
+          <img
+            src="/ruta/del/logo.svg"
+            alt="Logo"
+            style={{ maxWidth: 100, height: 'auto', marginBottom: '10px' }}
+          />
+        </Grid>
+        <Grid item>
+          <Link
+            to="/about"
+            style={{ color: '#ffffff', textDecoration: 'none' }}
+          >
+            <Typography variant="body1">Sobre nosotros</Typography>
+          </Link>
+        </Grid>
+        <Grid item>
+          <Typography variant="body2">&copy;SkyScape 2024</Typography>
+        </Grid>
+      </Grid>
+    </footer>
   )
 }
 
