@@ -72,6 +72,8 @@ function FormSignup() {
         backgroundColor: '#ECFDF5',
         padding: '20px',
         borderRadius: '8px',
+        display: "flex",
+        flexDirection: "column"
       }}
     >
       <TextField
@@ -79,7 +81,7 @@ function FormSignup() {
         name="name"
         value={formData.name}
         onChange={handleChange}
-        fullWidth
+        
         required
         style={{ marginBottom: '12px' }}
         InputProps={{ style: { backgroundColor: 'white' } }}
@@ -89,7 +91,7 @@ function FormSignup() {
         name="lastName"
         value={formData.lastName}
         onChange={handleChange}
-        fullWidth
+        
         required
         style={{ marginBottom: '12px' }}
         InputProps={{ style: { backgroundColor: 'white' } }}

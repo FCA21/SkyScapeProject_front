@@ -1,5 +1,6 @@
 
 import { Toolbar, Button, Avatar, Typography } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -40,6 +41,7 @@ function Header() {
             transition: 'transform 0.3s',
           }}
         >
+          <Link to="/signup">
           <Button
             variant="contained"
             sx={{
@@ -50,9 +52,10 @@ function Header() {
               },
             }}
             style={{ fontSize: '16px' }}
-          >
+            >
             Registrarse
           </Button>
+            </Link>
           <Button
             variant="contained"
             sx={{
