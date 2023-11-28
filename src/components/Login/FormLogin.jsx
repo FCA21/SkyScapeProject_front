@@ -58,22 +58,18 @@ function FormLogin() {
         backgroundColor: '#ECFDF5',
         padding: '20px',
         borderRadius: '8px',
-        display: "flex",
-        flexDirection: "column"
+        display: 'flex',
+        flexDirection: 'column',
       }}
     >
-
-
-
       <TextField
         label="Email"
         name="email"
         value={formData.email}
         onChange={handleChange}
-        fullWidth
         required
         type="email"
-        style={{ marginBottom: '12px' }}
+        style={{ marginBottom: '15px', width: '500px' }}
         InputProps={{ style: { backgroundColor: 'white' } }}
       />
       <TextField
@@ -81,26 +77,12 @@ function FormLogin() {
         name="password"
         value={formData.password}
         onChange={handleChange}
-        fullWidth
         required
         type="password"
-        style={{ marginBottom: '12px' }}
+        style={{ marginBottom: '25px', width: '500px' }}
         InputProps={{ style: { backgroundColor: 'white' } }}
       />
 
-      <FormControlLabel
-        control={
-          <Checkbox
-            name="termsAccepted"
-            checked={formData.termsAccepted}
-            onChange={handleChange}
-            color="primary"
-            required
-          />
-        }
-        label="Aceptar términos y condiciones de uso de datos personales"
-        style={{ marginBottom: '12px' }}
-      />
       <Button
         variant="contained"
         style={{
