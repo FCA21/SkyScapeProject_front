@@ -1,4 +1,3 @@
-
 import { Toolbar, Button, Avatar, Typography } from '@mui/material'
 import { Link } from 'react-router-dom'
 
@@ -42,33 +41,35 @@ function Header() {
           }}
         >
           <Link to="/signup">
-          <Button
-            variant="contained"
-            sx={{
-              backgroundColor: '#65a30d',
-              '&:hover': {
-                backgroundColor: '#4caf50', // Cambia el color al pasar el cursor
-                transform: 'scale(1.05)', // Aumenta un poco el tamaño
-              },
-            }}
-            style={{ fontSize: '16px' }}
+            <Button
+              variant="contained"
+              sx={{
+                backgroundColor: '#65a30d',
+                '&:hover': {
+                  backgroundColor: '#4caf50', // Cambia el color al pasar el cursor
+                  transform: 'scale(1.05)', // Aumenta un poco el tamaño
+                },
+              }}
+              style={{ fontSize: '16px' }}
             >
-            Registrarse
-          </Button>
-            </Link>
-          <Button
-            variant="contained"
-            sx={{
-              backgroundColor: '#059669',
-              '&:hover': {
-                backgroundColor: '#4caf50', // Cambia el color al pasar el cursor
-                transform: 'scale(1.05)', // Aumenta un poco el tamaño
-              },
-            }}
-            style={{ fontSize: '16px' }}
-          >
-            Entrar
-          </Button>
+              Registrarse
+            </Button>
+          </Link>
+          <Link to='/login'>
+            <Button
+              variant="contained"
+              sx={{
+                backgroundColor: '#059669',
+                '&:hover': {
+                  backgroundColor: '#4caf50', // Cambia el color al pasar el cursor
+                  transform: 'scale(1.05)', // Aumenta un poco el tamaño
+                },
+              }}
+              style={{ fontSize: '16px' }}
+            >
+              Entrar
+            </Button>
+          </Link>
         </div>
       </Toolbar>
     </>

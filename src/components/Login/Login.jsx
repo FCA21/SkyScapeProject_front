@@ -9,7 +9,7 @@ const Login = () => {
         <img className="imageLogin" src={loginPhoto} alt="ImagenDeLogin" />
       </div>
       <div className="right-parra">
-        <p>Únete a la aventura: regístrate y descubre tu próximo destino</p>
+        <p>Bienvenido explorador: Continúa la aventura</p>
         <FormLogin />
       </div>
     </div>
