@@ -1,17 +1,14 @@
+import React, { useState } from 'react'
 import { TextField, Button, Checkbox, FormControlLabel } from '@mui/material'
-import './FormSignup.css'
-import { useState } from 'react'
+import './FormLogin.css'
 
 
-function FormSignup() {
+function FormLogin() {
   const [formData, setFormData] = useState({
-    name: '',
-    lastName: '',
-    username: '',
+
     email: '',
     password: '',
-    repeatPassword: '',
-    termsAccepted: false,
+
   })
 
   const handleChange = (e) => {
@@ -28,10 +25,10 @@ function FormSignup() {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    const {name, lastName, username, email, password, repeatPassword, termsAccepted } = formData;
+    const { email, password } = formData;
     
     if (
-      !name ||!lastName ||!username ||!email ||!password ||!repeatPassword ||!termsAccepted
+      !email ||!password 
     ) { setFormError('Por favor, completa todos los campos obligatorios.')
       return;
     
@@ -41,22 +38,16 @@ function FormSignup() {
 
   const isFormValid = () => {
     const {
-      name,
-      lastName,
-      username,
+
       email,
       password,
-      repeatPassword,
-      termsAccepted,
+
     } = formData
     return (
-      name &&
-      lastName &&
-      username &&
+
       email &&
-      password &&
-      repeatPassword &&
-      termsAccepted
+      password 
+
     )
   }
 
@@ -71,36 +62,9 @@ function FormSignup() {
         flexDirection: "column"
       }}
     >
-      <TextField
-        label="Nombre"
-        name="name"
-        value={formData.name}
-        onChange={handleChange}
-        
-        required
-        style={{ marginBottom: '12px' }}
-        InputProps={{ style: { backgroundColor: 'white' } }}
-      />
-      <TextField
-        label="Apellidos"
-        name="lastName"
-        value={formData.lastName}
-        onChange={handleChange}
-        
-        required
-        style={{ marginBottom: '12px' }}
-        InputProps={{ style: { backgroundColor: 'white' } }}
-      />
-      <TextField
-        label="Usuario"
-        name="username"
-        value={formData.username}
-        onChange={handleChange}
-        fullWidth
-        required
-        style={{ marginBottom: '12px' }}
-        InputProps={{ style: { backgroundColor: 'white' } }}
-      />
+
+
+
       <TextField
         label="Email"
         name="email"
@@ -123,17 +87,7 @@ function FormSignup() {
         style={{ marginBottom: '12px' }}
         InputProps={{ style: { backgroundColor: 'white' } }}
       />
-      <TextField
-        label="Repetir contraseña"
-        name="repeatPassword"
-        value={formData.repeatPassword}
-        onChange={handleChange}
-        fullWidth
-        required
-        type="password"
-        style={{ marginBottom: '12px' }}
-        InputProps={{ style: { backgroundColor: 'white' } }}
-      />
+
       <FormControlLabel
         control={
           <Checkbox
@@ -163,4 +117,4 @@ function FormSignup() {
   )
 }
 
-export default FormSignup
+export default FormLogin

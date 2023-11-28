@@ -1,9 +1,17 @@
-import React from 'react'
 import './LoginPage.css'
+import Login from '../../components/Login/Login'
+
+import Footer from '../../components/Footer/Footer'
+import LoginHeader from '../../components/Login/LoginHeader'
+
 
 function LoginPage() {
   return (
-    <div>Login</div>
+    <>
+      <LoginHeader />
+      <Login />
+      <Footer />
+    </>
   )
 }
 

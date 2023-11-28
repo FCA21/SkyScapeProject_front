@@ -1,4 +1,4 @@
-.containerLogin {
+.containerSignup {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -19,6 +19,7 @@
 }
 
 .right-content {
+border-top-left-radius: 20px;
 
   background-color: #064e3b; 
   padding: 20px;
@@ -36,7 +37,7 @@
   height: 80%;
 }
 
-.left-content p {
+.left-parra p {
    color: #064e3b;
   font-family: "Inter-Bold", Helvetica;
   font-size: 46px;
