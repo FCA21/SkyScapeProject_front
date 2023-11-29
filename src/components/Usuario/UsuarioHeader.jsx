@@ -1,7 +1,15 @@
 import { Toolbar, Button, Avatar, Typography } from '@mui/material'
 import { Link } from 'react-router-dom'
+import PersonIcon from '@mui/icons-material/Person'
+import LogoutIcon from '@mui/icons-material/Logout'
+import { useNavigate } from 'react-router-dom'
+function UsuarioHeader() {
+  const navigate = useNavigate()
+  function logOut() {
+    localStorage.clear()
+    navigate('/')
+  }
 
-function Header() {
   return (
     <>
       <Toolbar
@@ -23,8 +31,8 @@ function Header() {
           variant="h3"
           style={{
             color: '#65a30d',
-            fontFamily:'Pacifico',
-            fontStyle: 'italic'
+            fontFamily: 'Pacifico',
+            fontStyle: 'italic',
           }}
         >
           SKYSCAPE
@@ -46,34 +54,34 @@ function Header() {
               sx={{
                 backgroundColor: '#65a30d',
                 '&:hover': {
-                  backgroundColor: '#4caf50', // Cambia el color al pasar el cursor
-                  transform: 'scale(1.05)', // Aumenta un poco el tamaño
+                  backgroundColor: '#4caf50',
+                  transform: 'scale(1.05)',
                 },
               }}
-              style={{ fontSize: '16px' }}
+              stylUsuarioHeadere={{ fontSize: '16px' }}
             >
-              Registrarse
+              <PersonIcon />
             </Button>
           </Link>
-          <Link to='/login'>
-            <Button
-              variant="contained"
-              sx={{
-                backgroundColor: '#059669',
-                '&:hover': {
-                  backgroundColor: '#4caf50', // Cambia el color al pasar el cursor
-                  transform: 'scale(1.05)', // Aumenta un poco el tamaño
-                },
-              }}
-              style={{ fontSize: '16px' }}
-            >
-              Entrar
-            </Button>
-          </Link>
+
+          <Button
+            variant="contained"
+            sx={{
+              backgroundColor: '#064E3B',
+              '&:hover': {
+                backgroundColor: '#4caf50',
+                transform: 'scale(1.05)',
+              },
+            }}
+            onClick={logOut}
+            stylUsuarioHeadere={{ fontSize: '16px' }}
+          >
+            <LogoutIcon />
+          </Button>
         </div>
       </Toolbar>
     </>
   )
 }
 
-export default Header
+export default UsuarioHeader

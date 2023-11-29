@@ -1,0 +1,24 @@
+.imagen {
+    background-color: #DCFCE7;
+    border-radius: 15px;
+    display:flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.actividades-foto {
+    height: 600px;
+    width: 300px;
+    border-radius: 15px;
+
+}
+
+.categoria-foto {
+    height: 200px;
+    margin: auto;
+    width: 100%;
+    border-radius: 15px;
+}

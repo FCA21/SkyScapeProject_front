@@ -1,18 +1,23 @@
 import { TextField, Button, Checkbox, FormControlLabel } from '@mui/material'
 import './FormSignup.css'
 import { useState } from 'react'
-
+import { signup } from '../../../services/auth'
+import { useNavigate } from 'react-router-dom'
 
 function FormSignup() {
+  const navigate = useNavigate()
   const [formData, setFormData] = useState({
-    name: '',
-    lastName: '',
     username: '',
+    age: '',
     email: '',
     password: '',
     repeatPassword: '',
     termsAccepted: false,
   })
+
+  const checkPassword = () => {
+    return formData.password.length > 4
+  }
 
   const handleChange = (e) => {
     const { name, value, checked, type } = e.target
@@ -25,39 +30,32 @@ function FormSignup() {
 
   const [formError, setFormError] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
 
-    const {name, lastName, username, email, password, repeatPassword, termsAccepted } = formData;
-    
-    if (
-      !name ||!lastName ||!username ||!email ||!password ||!repeatPassword ||!termsAccepted
-    ) { setFormError('Por favor, completa todos los campos obligatorios.')
-      return;
-    
+    const { username, age, email, password, repeatPassword, termsAccepted } =
+      formData
+
+    if (!username || !email || !password || !repeatPassword || !termsAccepted) {
+      setFormError('Por favor, completa todos los campos obligatorios.')
+      return
     }
-    console.log('Datos enviados:', formData)
+
+
+      const result = await signup(formData)
+      localStorage.setItem('token', result.token)
+      localStorage.setItem('rol', result.rol)
+  
+      console.log('Datos enviados:', formData)
+      navigate('/app')
+
+
   }
 
   const isFormValid = () => {
-    const {
-      name,
-      lastName,
-      username,
-      email,
-      password,
-      repeatPassword,
-      termsAccepted,
-    } = formData
-    return (
-      name &&
-      lastName &&
-      username &&
-      email &&
-      password &&
-      repeatPassword &&
-      termsAccepted
-    )
+    const { username, email, password, repeatPassword, termsAccepted } =
+      formData
+    return username && email && password && repeatPassword && termsAccepted && checkPassword()
   }
 
   return (
@@ -67,39 +65,33 @@ function FormSignup() {
         backgroundColor: '#ECFDF5',
         padding: '20px',
         borderRadius: '8px',
-        display: "flex",
-        flexDirection: "column"
+        display: 'flex',
+        flexDirection: 'column',
       }}
     >
-      <TextField
-        label="Nombre"
-        name="name"
-        value={formData.name}
-        onChange={handleChange}
-        
-        required
-        style={{ marginBottom: '12px' }}
-        InputProps={{ style: { backgroundColor: 'white' } }}
-      />
-      <TextField
-        label="Apellidos"
-        name="lastName"
-        value={formData.lastName}
-        onChange={handleChange}
-        
-        required
-        style={{ marginBottom: '12px' }}
-        InputProps={{ style: { backgroundColor: 'white' } }}
-      />
       <TextField
         label="Usuario"
         name="username"
         value={formData.username}
         onChange={handleChange}
         fullWidth
-        required
+        //required
         style={{ marginBottom: '12px' }}
         InputProps={{ style: { backgroundColor: 'white' } }}
+      />
+      <TextField
+        label="Edad"
+        name="age"
+        value={formData.age}
+        onChange={handleChange}
+        /* VALUE={age} */
+        //required
+        style={{ marginBottom: '12px', backgroundColor: 'white' }}
+        InputProps={{
+          inputMode: 'text',
+          pattern: '[0-9]',
+          maxLength: '2',
+        }}
       />
       <TextField
         label="Email"
@@ -107,7 +99,7 @@ function FormSignup() {
         value={formData.email}
         onChange={handleChange}
         fullWidth
-        required
+        //required
         type="email"
         style={{ marginBottom: '12px' }}
         InputProps={{ style: { backgroundColor: 'white' } }}
@@ -118,7 +110,7 @@ function FormSignup() {
         value={formData.password}
         onChange={handleChange}
         fullWidth
-        required
+        //required
         type="password"
         style={{ marginBottom: '12px' }}
         InputProps={{ style: { backgroundColor: 'white' } }}
@@ -129,7 +121,7 @@ function FormSignup() {
         value={formData.repeatPassword}
         onChange={handleChange}
         fullWidth
-        required
+        //required
         type="password"
         style={{ marginBottom: '12px' }}
         InputProps={{ style: { backgroundColor: 'white' } }}
@@ -141,7 +133,7 @@ function FormSignup() {
             checked={formData.termsAccepted}
             onChange={handleChange}
             color="primary"
-            required
+            //required
           />
         }
         label="Aceptar términos y condiciones de uso de datos personales"

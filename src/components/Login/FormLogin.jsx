@@ -1,15 +1,20 @@
 import React, { useState } from 'react'
-import { TextField, Button, Checkbox, FormControlLabel } from '@mui/material'
+import { TextField, Button, Checkbox, FormControlLabel,CardActions } from '@mui/material'
 import './FormLogin.css'
+import { login } from '../../services/auth'
+import { useNavigate } from 'react-router-dom'
+
 
 
 function FormLogin() {
+  const navigate = useNavigate()
   const [formData, setFormData] = useState({
 
     email: '',
     password: '',
 
   })
+
 
   const handleChange = (e) => {
     const { name, value, checked, type } = e.target
@@ -20,9 +25,10 @@ function FormLogin() {
     }))
   }
 
+
   const [formError, setFormError] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
 
     const { email, password } = formData;
@@ -33,7 +39,13 @@ function FormLogin() {
       return;
     
     }
-    console.log('Datos enviados:', formData)
+    const result = await login(formData)
+    localStorage.setItem('token', result.token)
+    localStorage.setItem('rol', result.rol)
+
+    //console.log(result)
+    //console.log('Datos enviados:', formData)
+    navigate('/app')
   }
 
   const isFormValid = () => {
@@ -67,7 +79,7 @@ function FormLogin() {
         name="email"
         value={formData.email}
         onChange={handleChange}
-        required
+        //required
         type="email"
         style={{ marginBottom: '15px', width: '500px' }}
         InputProps={{ style: { backgroundColor: 'white' } }}
@@ -77,7 +89,7 @@ function FormLogin() {
         name="password"
         value={formData.password}
         onChange={handleChange}
-        required
+        //required
         type="password"
         style={{ marginBottom: '25px', width: '500px' }}
         InputProps={{ style: { backgroundColor: 'white' } }}
@@ -93,7 +105,7 @@ function FormLogin() {
         type="submit"
         disabled={!isFormValid()}
       >
-        Registrarse
+        Entrar
       </Button>
     </form>
   )

@@ -1,0 +1,37 @@
+.user_images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    
+}
+
+.title {
+    margin-bottom:30px;
+    margin-top: 40px;
+    font-family: "Work Sans-Regular", Helvetica;
+    color: #064E3B;
+
+}
+
+.seleccion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 20px;
+}
