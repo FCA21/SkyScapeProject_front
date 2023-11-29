@@ -1,7 +1,7 @@
 import { Toolbar, Button, Avatar, Typography } from '@mui/material'
 import { Link } from 'react-router-dom'
-import PersonIcon from '@mui/icons-material/Person'
-import LogoutIcon from '@mui/icons-material/Logout'
+//import PersonIcon from '@mui/icons-material/Person'
+//import LogoutIcon from '@mui/icons-material/Logout'
 import { useNavigate } from 'react-router-dom'
 function UsuarioHeader() {
   const navigate = useNavigate()
@@ -60,7 +60,7 @@ function UsuarioHeader() {
               }}
               stylUsuarioHeadere={{ fontSize: '16px' }}
             >
-              <PersonIcon />
+          
             </Button>
           </Link>
 
@@ -76,7 +76,7 @@ function UsuarioHeader() {
             onClick={logOut}
             stylUsuarioHeadere={{ fontSize: '16px' }}
           >
-            <LogoutIcon />
+         
           </Button>
         </div>
       </Toolbar>
