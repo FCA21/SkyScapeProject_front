@@ -1,8 +1,9 @@
 import { Toolbar, Button, Avatar, Typography } from '@mui/material'
 import { Link } from 'react-router-dom'
-//import PersonIcon from '@mui/icons-material/Person'
-//import LogoutIcon from '@mui/icons-material/Logout'
+import PersonIcon from '@mui/icons-material/Person'
+import LogoutIcon from '@mui/icons-material/Logout'
 import { useNavigate } from 'react-router-dom'
+import SignpostIcon from '@mui/icons-material/Signpost'
 function UsuarioHeader() {
   const navigate = useNavigate()
   function logOut() {
@@ -20,12 +21,14 @@ function UsuarioHeader() {
           backgroundColor: '#064E3B',
         }}
       >
-        <Avatar
-          alt="Logo"
-          src="/logo_recortado.webp"
-          className="logo"
-          style={{ width: '80px', height: '80px', fontSize: '40px' }}
-        />
+        <Link to={'/'}>
+          <Avatar
+            alt="Logo"
+            src="/logo_recortado.webp"
+            className="logo"
+            style={{ width: '80px', height: '80px', fontSize: '40px' }}
+          />
+        </Link>
 
         <Typography
           variant="h3"
@@ -35,7 +38,7 @@ function UsuarioHeader() {
             fontStyle: 'italic',
           }}
         >
-          SKYSCAPE
+          SKYSCAPE <SignpostIcon sx={{fontSize:'50px'}}/>
         </Typography>
 
         <div
@@ -60,10 +63,9 @@ function UsuarioHeader() {
               }}
               stylUsuarioHeadere={{ fontSize: '16px' }}
             >
-          
+              <PersonIcon />
             </Button>
           </Link>
-
           <Button
             variant="contained"
             sx={{
@@ -76,7 +78,7 @@ function UsuarioHeader() {
             onClick={logOut}
             stylUsuarioHeadere={{ fontSize: '16px' }}
           >
-         
+            <LogoutIcon />
           </Button>
         </div>
       </Toolbar>

@@ -9,7 +9,7 @@ function Perfil() {
     <div className="perfilContainer">
       <img className="userAvatar" alt="userAvatar" src="/ciclismo.png" />
         <div className="nombre">John Doe</div>
-        <input className="perfilBarra" alt='perfilBarra' placeholder='Búsqueda'/>
+      
       <Config />
       <Favoritos />
       <Pendientes />

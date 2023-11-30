@@ -1,5 +1,8 @@
 import { Toolbar, Button, Avatar, Typography } from '@mui/material'
 import { Link } from 'react-router-dom'
+import LoginIcon from '@mui/icons-material/Login'
+import LockOpenIcon from '@mui/icons-material/LockOpen'
+import SignpostIcon from '@mui/icons-material/Signpost'
 
 function Header() {
   return (
@@ -23,11 +26,11 @@ function Header() {
           variant="h3"
           style={{
             color: '#65a30d',
-            fontFamily:'Pacifico',
-            fontStyle: 'italic'
+            fontFamily: 'Pacifico',
+            fontStyle: 'italic',
           }}
         >
-          SKYSCAPE
+          SKYSCAPE <SignpostIcon sx={{fontSize:'50px'}}/>
         </Typography>
 
         <div
@@ -52,22 +55,22 @@ function Header() {
               }}
               style={{ fontSize: '16px' }}
             >
-              Registrarse
+              Registrarse <LockOpenIcon sx={{ marginLeft: '10px' }} />
             </Button>
           </Link>
-          <Link to='/login'>
+          <Link to="/login">
             <Button
               variant="contained"
               sx={{
                 backgroundColor: '#059669',
                 '&:hover': {
-                  backgroundColor: '#4caf50', // Cambia el color al pasar el cursor
-                  transform: 'scale(1.05)', // Aumenta un poco el tamaño
+                  backgroundColor: '#4caf50',
+                  transform: 'scale(1.05)',
                 },
               }}
               style={{ fontSize: '16px' }}
             >
-              Entrar
+              Entrar <LoginIcon sx={{ marginLeft: '10px' }} />
             </Button>
           </Link>
         </div>

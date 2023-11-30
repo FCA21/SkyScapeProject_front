@@ -1,23 +1,31 @@
 .hechasContainer {
-    margin-top: 20px;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .hechasContainer h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .hechas {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .hechas img {
-    width: 100px;
-    height: 100px;
-    border-radius: 8px;
-  }
+  margin-top: 20px;
+  align-items: center;
+  width: 100%;
+  background-color: #ecfdf5;
+  margin-bottom: 10px;
+}
+
+.hechasContainer h2 {
+color: #064E3B;
+  font-family: "Work Sans-Regular", Helvetica;
+  font-size: 35px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+
+}
+
+.hechas {
+  display: flex;
+   gap: 50px;
+  justify-content: center;
+}
+
+.hechas img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  height: 400px;
+  width: 400px;
+   margin-bottom: 20px;
+}

@@ -16,7 +16,17 @@ const getAllActivities = async () => {
     }
 }
 
+const getAllActivitiesByCategorie = async () => {
+  try {
+    const { data } = await api.get('/actividad', {
+      headers: {
+        Authorization: localStorage.getItem('token'),
+      },
+    })
 
-export {
-    getAllActivities
+    return data
+  } catch (error) {
+    throw new Error(error)
+  }
 }
+export { getAllActivities, getAllActivitiesByCategorie }

@@ -5,7 +5,7 @@ import Signup from '../pages/SignupPage/SignupPage'
 import Login from '../pages/LoginPage/LoginPage'
 import Usuario from '../pages/UsuarioPage/UsuarioPage'
 import Perfil from '../components/Perfil/Perfil'
-
+import Category from '../pages/CategoryPage/CategoryPage'
 
 const router = createBrowserRouter([
   {
@@ -31,10 +31,13 @@ const router = createBrowserRouter([
         element: <Usuario />,
       },
       {
-        path:'/app/perfil',
-        element: <Perfil />
-
-      }
+        path: '/app/perfil',
+        element: <Perfil />,
+      },
+      {
+        path: '/app/categoria/:categoria',
+        element: <Category />,
+      },
     ],
   },
 ])

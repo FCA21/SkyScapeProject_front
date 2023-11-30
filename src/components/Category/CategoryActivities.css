@@ -1,0 +1,40 @@
+.activitiesContainer {
+  margin-top: 20px;
+  width: 100%;
+  color: #064E3B;
+}
+
+.activitiesContainer h4 {
+  color: #064E3B;
+  font-family: 'Inter-Regular', Helvetica;
+  font-size: 35px;
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.activities {
+color: #064E3B;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.image-item {
+  background-color: #ECFDF5;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-item img {
+  height: 300px;
+  width: 350px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
