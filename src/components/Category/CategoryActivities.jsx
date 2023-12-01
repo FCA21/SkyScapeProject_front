@@ -12,7 +12,6 @@ function Actividades({ actividades, categoria }) {
       <div className="activities">
       {
         filtrarActividades().map((actividad) => {
-          console.log(actividad)
           return (
             <div key={actividad.id} className="image-item">
               <img src="/public/playa.png" alt="Actividad 1" />

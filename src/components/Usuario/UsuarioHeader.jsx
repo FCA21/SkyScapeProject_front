@@ -51,7 +51,7 @@ function UsuarioHeader() {
             transition: 'transform 0.3s',
           }}
         >
-          <Link to="/signup">
+          <Link to="/app/perfil">
             <Button
               variant="contained"
               sx={{

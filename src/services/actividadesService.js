@@ -29,4 +29,6 @@ const getAllActivitiesByCategorie = async () => {
     throw new Error(error)
   }
 }
+
+
 export { getAllActivities, getAllActivitiesByCategorie }

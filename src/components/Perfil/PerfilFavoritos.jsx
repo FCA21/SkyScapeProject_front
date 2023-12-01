@@ -1,18 +1,23 @@
 // Favoritos.js
 import './PerfilFavoritos.css'
 
-
-function Favoritos() {
+function Favoritos({ favUsers }) {
+  
   return (
     <div className="favoritosContainer">
       <h2>Favoritos</h2>
       <div className="favoritos">
-        <img src="/public/observacion.png" alt="Favorito 1" />
-        <img src="/public/observacion.png" alt="Favorito 2" />
-        <img src="/public/observacion.png" alt="Favorito 3" />
+        {favUsers?.map((favorito) => {
+          return (
+            <div key={favorito.id}>
+              <img src={favorito.image_url} />
+              <p>{`${(favorito.categoria.slice(0,1).toUpperCase()+favorito.categoria.slice(1)).split("_").join(" ")}-${favorito.nombre_actividad}`}</p>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
 }
 
-export default Favoritos;
+export default Favoritos

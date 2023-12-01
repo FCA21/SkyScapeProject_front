@@ -21,6 +21,11 @@
     font-family: "Inter-Bold", Helvetica;
     font-size: 40px; 
     font-weight: 700;
+    color: #064E3B;
     align-items: center;
+    background-color: #b3ecd2;
+    border-radius: 30px;
+    margin:10px;
+    padding: 10px;
   }
   

@@ -5,7 +5,9 @@ import Actividades from './CategoryActivities'
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { getAllActivitiesByCategorie } from '../../services/actividadesService'
+
 function Category() {
+
   const { categoria } = useParams()
 
   const [actividades, setActividades]= useState([])

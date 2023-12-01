@@ -29,3 +29,13 @@ color: #064E3B;
   width: 400px;
    margin-bottom: 20px;
 }
+
+.hechas p {
+ background-color: #b3ecd2;
+  border-radius: 40px;
+  font-family: "Work Sans-Regular", Helvetica;
+  color:#064E3B;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
