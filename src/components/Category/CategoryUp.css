@@ -12,7 +12,7 @@
 
 .categoryGroup {
   background-color: #ecfdf5;
-  margin-top: 10px;
+  
   display: flex;
   flex-direction: row;
   margin-bottom: 25px;
@@ -32,7 +32,7 @@
 .categoryText h6 {
   color: #064e3b;
   font-family: 'Inter-Regular', Helvetica;
-  font-size: 17px;
+  font-size: 19px;
   text-align: left;
   margin-left: 10px;
   position: relative;
@@ -46,6 +46,29 @@
   margin-left: 10px;
   margin-bottom: 10px;
 }
+
+.categoryText p {
+  color: #059669;
+  font-size: 14px;
+  text-align: left;
+  max-width: 70%;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.categoryText ul {
+  color: #059669;
+  font-size: 14px;
+  text-align: left;
+  max-width: 70%;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+
+}
+
+
 .categoriaImage {
   margin-right: 20px;
   justify-content: space-between;

@@ -7,8 +7,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    background-color: #ECFDF5;
-
+    
 }
 
 .small-images {
@@ -20,7 +19,7 @@
     gap: 25px; 
     padding-left: 100px;
     padding-right: 100px;
-
+  
 }
 
 .explore-text {

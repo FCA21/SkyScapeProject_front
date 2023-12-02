@@ -7,10 +7,15 @@
     width: 400px;
     justify-content: center;
     align-items: center;
+    font-family: "Work Sans-Regular", Helvetica;
+    font-weight: 700;
+    color: #064E3B ;
+
 }
 
 img {
     height: 300px;
     width: 350px;
     border-radius: 15px;
+    margin-bottom: 5px;
 }

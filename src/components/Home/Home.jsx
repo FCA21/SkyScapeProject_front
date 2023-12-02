@@ -5,6 +5,7 @@ import HowWork from '../HowWork/HowWork'
 import Benefits from '../Benefits/Benefits'
 
 
+
 function Home() {
   return (
     <div className='home-container'>
@@ -18,13 +19,13 @@ function Home() {
           <ImagesCard ima="/camping.png" txt="Camping" />
           <ImagesCard ima="/playa.png" txt="Playa" />
           <ImagesCard ima="/surf.png" txt="Surf" />
-          <ImagesCard ima="/buceo.png" txt="Budeo" />
-          <ImagesCard ima="/observacion.png" txt="Observacion" />
+          <ImagesCard ima="/buceo.png" txt="Buceo" />
+          <ImagesCard ima="/observacion.png" txt="Observacion de estrellas" />
         </div>
         <div><HowWork/>
         </div>
         <div><Benefits/>
-        </div>
+        </div> 
       </div>
     
   

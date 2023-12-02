@@ -24,7 +24,7 @@ useEffect(()=>{
 
   return (
     <div className="categoryContainer">
-      <CategoryUp categoria={categoria} />
+      <CategoryUp categoria={categoria.charAt(0).toUpperCase() + categoria.slice(1)} />
       <CategoryMap />
       <Actividades actividades={actividades} categoria={categoria} />
     </div>
