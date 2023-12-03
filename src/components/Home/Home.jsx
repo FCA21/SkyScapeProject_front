@@ -16,6 +16,7 @@ function Home() {
         <div className="small-images">
           {/* Primer conjunto de tres imágenes */}
           <Link to='/info'>
+            {/* scrollTop='0'*/}
           <ImagesCard ima="/ciclismo.png" txt="Ciclismo" />
           </Link>
           <Link to='/info'>
