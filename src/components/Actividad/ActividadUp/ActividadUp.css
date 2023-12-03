@@ -1,0 +1,39 @@
+/* Estilos para ActividadUp */
+
+.activity-container {
+    margin-top: 20px;
+    width: 100%;
+    color: #064e3b;
+  }
+  
+  .activity-title {
+    color: #064e3b;
+    font-family: 'Inter-Regular', Helvetica;
+    font-size: 35px;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .activity-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .activity-info h6 {
+    font-family: 'Inter-Regular', Helvetica;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .activity-info img {
+    width: 200px; /* Puedes ajustar el tamaño de la imagen según sea necesario */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

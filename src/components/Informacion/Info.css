@@ -1,0 +1,58 @@
+/* Estilos para Info */
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  
+
+}
+
+.info-images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px; 
+}
+
+.image-description {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image-info {
+  flex-shrink: 0; 
+  margin-right: 10px; 
+}
+
+.text-info {
+  margin-top: 75px;
+  color: #064E3B;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: justify;
+  max-width: 70%;
+  font-family: 'Inter-Regular', Helvetica;
+  background-color: #ecfdf5;
+  border-radius: 20px;
+  padding: 15px;
+
+}
+
+.infoButton {
+  margin: 20px
+}
+
+.infoTitle {
+  
+ margin-bottom: 20px;
+  color: #064E3B;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Inter-Regular', Helvetica;
+  background-color: #ecfdf5;
+  border-radius: 20px;
+  padding: 15px;
+
+}

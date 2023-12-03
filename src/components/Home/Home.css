@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    
+    text-decoration: none;
 }
 
 .small-images {
@@ -19,6 +19,7 @@
     gap: 25px; 
     padding-left: 100px;
     padding-right: 100px;
+    text-decoration: none;
   
 }
 
@@ -26,7 +27,8 @@
       font-family: "Work Sans-Regular", Helvetica;
     margin-top: 30px;
     margin-bottom: 20px;
-    color: #064E3B
+    color: #064E3B;
+    text-decoration: none;
 }
 
 .subtitle {
@@ -34,4 +36,5 @@
     color: #064e3b;
     font-size: 20px;
     margin-bottom: 30px;
+    text-decoration: none;
 }

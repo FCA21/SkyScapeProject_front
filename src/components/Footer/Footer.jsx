@@ -13,10 +13,10 @@ function Footer() {
     >
       <Grid container direction="column" alignItems="center" spacing={2}>
         <Grid item>
-          <img
-            src="/ruta/del/logo.svg"
+          <img className='logoFooter'
+            src="/logo_recortado.webp"
             alt="Logo"
-            style={{ maxWidth: 100, height: 'auto', marginBottom: '10px' }}
+            style={{ maxWidth: 75, height: 'auto', marginBottom: '10px' }}
           />
         </Grid>
         <Grid item>

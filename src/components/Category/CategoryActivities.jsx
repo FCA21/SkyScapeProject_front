@@ -1,4 +1,3 @@
-import React from 'react'
 import './CategoryActivities.css'
 
 function Actividades({ actividades, categoria }) {

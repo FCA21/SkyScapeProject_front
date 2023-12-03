@@ -4,8 +4,11 @@ import Root from '../layouts/Root'
 import Signup from '../pages/SignupPage/SignupPage'
 import Login from '../pages/LoginPage/LoginPage'
 import Usuario from '../pages/UsuarioPage/UsuarioPage'
-import Perfil from '../components/Perfil/Perfil'
+import Perfil from '../pages/PerfilPage/PerfilPage'
 import Category from '../pages/CategoryPage/CategoryPage'
+import Actividad from '../pages/ActividadPage/ActividadPage'
+import Info from '../pages/InfoPage/InfoPage'
+
 
 const router = createBrowserRouter([
   {
@@ -14,7 +17,7 @@ const router = createBrowserRouter([
   },
   { path: '/login', element: <Login /> },
   { path: '/signup', element: <Signup /> },
-  /*  { path: '/info', element: <Info /> }, */
+  {path: '/info', element: <Info /> },
   {
     path: '/app',
     element: <Root />,
@@ -38,6 +41,10 @@ const router = createBrowserRouter([
         path: '/app/categoria/:categoria',
         element: <Category />,
       },
+      {
+        path: '/app/actividad/:actividad',
+        element: <Actividad />
+      }
     ],
   },
 ])

@@ -10,6 +10,7 @@
     font-family: "Work Sans-Regular", Helvetica;
     font-weight: 700;
     color: #064E3B ;
+    text-decoration: none;
 
 }
 
@@ -18,4 +19,5 @@ img {
     width: 350px;
     border-radius: 15px;
     margin-bottom: 5px;
+    text-decoration: none;
 }
