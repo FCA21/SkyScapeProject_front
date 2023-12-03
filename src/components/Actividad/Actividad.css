@@ -1,0 +1,27 @@
+
+
+.actividadparra {
+    background-color: #ecfdf5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.mapaActividad{
+    margin: 0px;
+}
+
+.mapaActividad p {
+    background-color: white;
+    font-family: 'Inter-Regular', Helvetica;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: left;
+    color: #064E3B;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.climate {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,14 @@
+.climaImagen {
+    width: 500px;
+    height: 400px;
+}
+
+.textoClima {
+    font-family: 'Inter-Regular', Helvetica;
+    margin: 15px;
+    text-align: left;
+    color: #064E3B;
+    font-size: 35px;
+    font-weight: 700;
+    background-color: white;
+}

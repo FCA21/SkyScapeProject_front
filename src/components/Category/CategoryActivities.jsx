@@ -13,41 +13,14 @@ function Actividades({ actividades, categoria }) {
         filtrarActividades().map((actividad) => {
           return (
             <div key={actividad.id} className="image-item">
-              <img src="/public/playa.png" alt="Actividad 1" />
+              <img src="/public/camping.png" alt="Actividad 1" />
               <p>Actividad 1</p>
             </div>
           )
         })
       }
       </div>
-      {/* <div className="activities">
-        <div className="image-item">
-          <img src="/public/playa.png" alt="Actividad 1" />
-          <p>Actividad 1</p>
-        </div>
-        <div className="image-item">
-          <img src="/public/camping.png" alt="Actividad 2" />
-          <p>Actividad 2</p>
-        </div>
-        <div className="image-item">
-          <img src="/public/playa.png" alt="Actividad 3" />
-          <p>Actividad 3</p>
-        </div>
-      </div>
-      <div className="activities">
-        <div className="image-item">
-          <img src="/public/playa.png" alt="Actividad 4" />
-          <p>Actividad 4</p>
-        </div>
-        <div className="image-item">
-          <img src="/public/camping.png" alt="Actividad 5" />
-          <p>Actividad 5</p>
-        </div>
-        <div className="image-item">
-          <img src="/public/playa.png" alt="Actividad 6" />
-          <p>Actividad 6</p>
-        </div>
-      </div> */}
+    
     </div>
   )
 }
